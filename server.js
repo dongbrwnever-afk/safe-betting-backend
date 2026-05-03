@@ -33,7 +33,8 @@ app.post("/api/approve/:id", (req, res) => {
 
   res.json({ success: true });
 });
+const PORT = process.env.PORT || 5000;
 
-app.listen(5000, () => {
-  console.log("Backend running on port 5000");
-});
+app.listen(PORT, () => {
+  console.log("Backend running on port " + PORT);
+
